@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tp - 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 77%;
+        }
+        .regional,
+        .title,
+        .title-2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .regional {
+            text-align: center;
+            margin: 42px;
+            font-size: 33px;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .title {
+            color: #3a67b3;
+            font-weight: bold;
+            font-size: 31px;
+            margin: 10px 0px 10px 40px;
+        }
+        .title-2 {
+            color: #3ab3ab;
+            font-weight: bold;
+            font-size: 31px;
+            margin: 10px 0px 10px 40px;
+        }
+        .q {
+            color: green;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .answer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+        }
+        .a {
+            margin-bottom: 22px;
+        }
+        strong {
+            font-style: italic;
+            color: rgb(68, 68, 68);
+        }
+        .ex {
+            border-left: 5px solid rgb(0, 215, 0);
+            border-radius: 8px;
+            font-weight: 400;
+        }
+        .ex-2 {
+            border-left: 5px solid rgb(148, 8, 255);
+            color: purple;
+            border-radius: 8px;
+            font-style: italic;
+            font-weight: 400;
+        }
+        .ex-3 {
+            border-left: 5px solid rgb(255, 0, 0);
+            color: purple;
+            border-radius: 8px;
+            font-style: italic;
+            font-weight: 400;
+        }
+        .text-2 {
+            color: purple;
+        }
+        .pink {
+            color: rgb(255, 0, 43);
+        }
+        a {
+            text-decoration: none;
+        }
+        .grey {
+            color: rgb(101, 77, 77);
+        }
+        .green {
+            color: rgb(0, 212, 0);
+            font-weight: bold;
+        }
+        .css-code {
+            margin: 10px 0px 0px 33px;
+        }
+        .text {
+            color: black;
+        }
+        .logo {
+            width: 39px;
+            height: 39px;
+        }
+        li {
+            list-style: none;
+        }
+        ul {
+            display: flex;
+            align-items: center; 
+            background-color: #f8f9fa; 
+            border-bottom: 1px solid #e9ecef; 
+        }
+        ul li {
+            padding: 10px;
+        }
+        ul a {
+            color: black;
+        }
+        .search-area {
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 13px;
+            padding-left: 11px;
+            font-size: 13px;
+            color: rgb(72, 72, 72);
+        }
+        .search-area::-webkit-input-placeholder {
+            font-size: 13px;
+            color: rgb(174, 174, 174);
+        }
+        .margin {
+            margin-left: 22px;
+        }
+        .rechercher {
+            background-color: #007bff; 
+            font-size: 13px;
+            border-radius: 13px;
+            border: none;
+            color: white; 
+            padding: 10px 15px; 
+            cursor: pointer; 
+        }
+        .rechercher:hover {
+            background-color: #0056b3; 
+        }
+        .logo-title {
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .maroc .title {
+            color: black;
+            text-align: center;
+            margin-right: 51px;
+        }
+        .maroc img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto;
+            animation: rotateMorocco 2s linear ;
+        }
+        @keyframes rotateMorocco {
+            0%   {
+                transform:rotate(0)
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 400px;
+            }
+            .regional {
+                font-size: 22px;
+            }
+            .nav-bar ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="regional">Examin Regional De Fin De Module<br>Site Web Statique</div>
+        <div class="partie-1">
+            <div class="title">Parite 1:</div>
+            <div class="answer">
+                <span class="q">1 -</span><span class="a">'<strong>< p align=justify ></strong>' Represente un paragraphe avec un alignement justifié.</span>
+                <span class="q">2 -</span><span class="a">Un attribut universel est un attribut qui peut etre appliqué à tous les elements HTML<strong><br>Ex : .class</strong> .</span>
+                <span class="q">3 -</span><span class="a"><strong>'< optgroup >'</strong>est utilisé dans l'option <strong>'< select >'</strong> elle permet de cree une liste organisé des option.</span>
+                <span class="q">4 -</span><span class="a">Le selecteur universel est represene par "<strong> * </strong>" il selectionne tous les elements d'une page.</span>
+                <span class="q">5 -</span><span class="a">Un moteur de rendu est respensable de l'affichage des pages web. <strong>Firefox</strong> utilise <strong>Gecko</strong> .</span>
+                <span class="q">6 -</span><span class="a">' <strong class="chemin">/../Contenu/Medias/Images/Logo.png</strong> ' ce chemin represente un chemin d'access pour acceder une image.</span>
+                <span class="q">7 -</span><span class="a">Pour cibler les elments impairs à partir du 3e ' <strong>< li ></strong> ' dans une liste ' <strong>< ul ></strong> en utilise <br>
+                    <div class="ex text-success bg-light p-3"><em>ul li:nth-child(odd):nth-child(n+3)</em></div>
+                </span>
+                <span class="q">8 -</span><span class="a">Le role de ' <strong>body</strong> ' est le ' <strong>corps du fichier</strong> ' de HTML</span>
+                <span class="q">9 -</span><span class="a">La bonne reponse est ' <strong>b</strong> ' . <br>
+                    <div class="ex text-success bg-light p-3"><em>< a href="https://ista.ma"> Visiter Site ISTA< a>.</em></div>
+                </span>
+                <span class="q">10 -</span><span class="a">La code ' <strong>CSS</strong> ' est : <br>
+                    <div class="ex text-success bg-light p-3"><em><span class="green">@media</span> screen and <span class="green">(</span>min-width: <span class="green">576px</span><span class="green">)</span> and <span class="green">(</span>max-width: <span class="green">786px</span><span class="green">)</span>
+                    {<br><div class="css-code">
+                        <span class="green">a</span> {<br>
+                            color: <span class="green">orange</span>;
+                        <br>}
+                        </div>}</em></div>
+                </span>
+            </div>
+        </div>
+        <div class="partie-2">
+            <div class="title">Parite 2:</div>
+            <div class="answer">
+                <div class="title-2">Exercice 1:</div>
+                <div class="ex-2 bg-light p-3">
+                    <span class="grey">< </span><span class="pink">h1</span><span class="grey">></span>Login<span class="grey"><</span><span class="pink">/h1</span><span class="grey">></span><br>
+                    <span class="grey"><</span><span class="pink">form</span><span class="grey">></span><br>
+                    <div class="text">
+                        <span class="margin"></span><span class="grey"><</span><span class="pink">label</span> <span class="text-2">for</span><span class="grey"> =</span><span class="text-2">"monom"</span><span class="grey">></span>Mon nom<span class="grey"><</span><span class="pink">/label</span><span class="grey">></span><br>
+                        <span class="margin"></span><span class="grey"><</span><span class="pink">input</span> <span class="text-2">type</span><span class="grey"> =</span><span class="text-2">"text"</span> <span class="text-2">id</span><span class="grey"> =</span><span class="text-2">"monnom"</span> <span class="text-2">name</span><span class="grey"> =</span><span class="text-2">"monnom"</span><span class="grey"><span class="pink"> required maxlength</span><span class="grey"> =</span><span class="text-2">"32"</span> <span class="text-2">pattern</span><span class="grey"> =</span><span class="text-2">"[A-Za-z]+"</span> /></span>
+                        <br>
+                        <br>
+                        <span class="margin"></span><span class="grey"><</span><span class="pink">label</span> <span class="text-2">for</span><span class="grey"> =</span><span class="text-2">"motdepasse"</span><span class="grey">></span>Mon mot de passe<span class="grey"><</span><span class="pink">/label</span><span class="grey">></span><br>
+                        <span class="margin"></span><span class="grey"><</span><span class="pink">input</span> <span class="text-2">type</span><span class="grey"> =</span><span class="text-2">"password"</span> <span class="text-2">id</span><span class="grey"> =</span><span class="text-2">"motdepasse"</span> <span class="text-2">name</span><span class="grey"> =</span><span class="text-2">"motdepasse"</span><span class="grey"><span class="pink"> required</span> /></span>
+                        <br>
+                        <br>
+                        <span class="margin"></span><span class="grey"><</span><span class="pink">label</span> <span class="text-2">for</span><span class="grey"> =</span><span class="text-2">"monemail"</span><span class="grey">></span>Mon email<span class="grey"><</span><span class="pink">/label</span><span class="grey">></span><br>
+                        <span class="margin"></span><span class="grey"><</span><span class="pink">input</span> <span class="text-2">type</span><span class="grey"> =</span><span class="text-2">"email"</span> <span class="text-2">id</span><span class="grey"> =</span><span class="text-2">"monemail"</span> <span class="text-2">name</span><span class="grey"> =</span><span class="text-2">"monemail"</span><span class="grey"><span class="pink"> required</span> /></span>
+                    </div>
+                    <span class="grey"><</span><span class="pink">/form</span><span class="grey">></span>
+                </div>
+                <div class="title-2">Exercice 2:</div>
+                <div class="answer">
+                    <div class="show-nav-bar">
+                        <div class="nav-bar">
+                            <ul class="bg-light">
+                                <li><a href="">
+                                    <img src="/images/tp-1 images/logo.png" class="logo" alt="logo restaurent">
+                                </a></li>
+                                <li class="logo-title"><a href="">MON.RESTAURANT</a></li>
+                                <li><a href="">Acceuil</a></li>
+                                <li><a href="">Menu</a></li>
+                                <li><a href="">Services</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li>
+                                    <input type="text" class="search-area" name="searcharea" id="searcharea" placeholder="taper un plat">
+                                </li>
+                                <li>
+                                    <button class="rechercher">
+                                        Rechercher
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
+                    <div class="a">
+                        La reponse de la question ' <strong>1</strong>, <strong>2</strong>, <strong>3</strong> ' est ci-dessous:
+                    </div>
+                    <div class="ex-2 bg-light p-3">
+                        <!-- nav-bar-using-BootStrap -->
+                            <span class="grey">&lt;</span><span class="pink">div</span> <span class="class-2">class</span><span class="grey">="container"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">nav</span> <span class="class-2">class</span><span class="grey">="navbar navbar-expand-lg navbar-light bg-light"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">a</span> <span class="class-2">class</span><span class="grey">="navbar-brand"</span> <span class="class-2">href</span><span class="grey">="#"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">img</span> <span class="class-2">src</span><span class="grey">="/images/tp-1 images/logo.png"</span> <span class="class-2">class</span><span class="grey">="logo"</span> <span class="class-2">alt</span><span class="grey">="logo restaurent"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">span</span> <span class="class-2">class</span><span class="grey">="logo-title h2 text-black"</span><span class="grey">&gt;</span><span class="text">MON.RESTAURANT</span><span class="grey">&lt;</span><span class="pink">/span</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/a</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">button</span> <span class="class-2">class</span><span class="grey">="navbar-toggler"</span> <span class="class-2">type</span><span class="grey">="button"</span> <span class="class-2">data-toggle</span><span class="grey">="collapse"</span> <span class="class-2">data-target</span><span class="grey">="#navbarNav"</span> <span class="class-2">aria-controls</span><span class="grey">="navbarNav"</span> <span class="class-2">aria-expanded</span><span class="grey">="false"</span> <span class="class-2">aria-label</span><span class="grey">="Toggle navigation"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">span</span> <span class="class-2">class</span><span class="grey">="navbar-toggler-icon"</span><span class="grey">&gt;</span><span class="grey">&lt;</span><span class="pink">/span</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/button</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="class-2">class</span><span class="grey">="collapse navbar-collapse"</span> <span class="class-2">id</span><span class="grey">="navbarNav"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">ul</span> <span class="class-2">class</span><span class="grey">="navbar-nav ml-auto"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">li</span> <span class="class-2">class</span><span class="grey">="nav-item"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">a</span> <span class="class-2">class</span><span class="grey">="nav-link"</span> <span class="class-2">href</span><span class="grey">="#"</span><span class="grey">&gt;</span><span class="text">Acceuil</span><span class="grey">&lt;</span><span class="pink">/a</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/li</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">li</span> <span class="class-2">class</span><span class="grey">="nav-item dropdown"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">a</span> <span class="class-2">class</span><span class="grey">="nav-link dropdown-toggle"</span> <span class="class-2">href</span><span class="grey">="#"</span> <span class="class-2">id</span><span class="grey">="navbarDropdownMenuLink"</span> <span class="class-2">role</span><span class="grey">="button"</span> <span class="class-2">data-toggle</span><span class="grey">="dropdown"</span> <span class="class-2">aria-haspopup</span><span class="grey">="true"</span> <span class="class-2">aria-expanded</span><span class="grey">="false"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="text">Menu</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/a</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="class-2">class</span><span class="grey">="dropdown-menu"</span> <span class="class-2">aria-labelledby</span><span class="grey">="navbarDropdownMenuLink"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">a</span> <span class="class-2">href</span><span class="grey">="dropdown-item"</span><span class="grey="><span class="grey">&gt;</span><span class="text">Petit Dejuner</span></span><span class="grey">&lt;</span><span class="pink">/a</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span> <span class="grey">&lt;</span><span class="pink">a</span> <span class="class-2">href</span><span class="grey">="dropdown-item"</span> <span class="grey="><span class="grey">&gt;</span><span class="text">Dejuner</span></span><span class="grey">&lt;</span><span class="pink">/a</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">a</span> <span class="class-2">href</span><span class="grey">="dropdown-item"</span><span class="grey="><span class="grey">&gt;</span><span class="text">Diner</span></span><span class="grey">&lt;</span><span class="pink">/a</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/li</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">li</span> <span class="class-2">class</span><span class="grey">="nav-item"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">a</span> <span class="class-2">href</span><span class="grey">="#"</span><span class="text"><span class="grey">&gt;</span>Services</span><span class="grey">&lt;</span><span class="pink">/a</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/li</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">li</span> <span class="class-2">class</span><span class="grey">="nav-item"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">a</span> <span class="class-2">href</span><span class="grey">="#"</span><span class="grey">&gt;</span><span class="text">Contact</span></span><span class="grey">&lt;</span><span class="pink">/a</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/li</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">li</span> <span class="class-2">class</span><span class="grey">="nav-item"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">form</span> <span class="class-2">class</span><span class="grey">="form-inline"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">input</span> <span class="class-2">type</span><span class="grey">="text"</span> <span class="class-2">class</span><span class="grey">="form-control search-area"</span> <span class="class-2">name</span><span class="grey">="searcharea"</span> <span class="class-2">id</span><span class="grey">="searcharea"</span> <span class="class-2">placeholder</span><span class="grey">="Taper un plat"</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">button</span> <span class="class-2">class</span><span class="grey">="btn btn-primary ml-2 rechercher"</span><span class="grey">&gt;</span><span class="text">Rechercher</span><span class="grey">&lt;</span><span class="pink">/button</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span> <span class="grey">&lt;</span><span class="pink">/form</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/li</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/ul</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">/nav</span><span class="grey">&gt;</span><br>
+                            <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                    </div>
+                    <div class="title-2">Exercice 3:</div>
+                    <span class="q">1 -</span><span class="a">Le code <strong>HTML</strong> pour la creation de cette page :</span>
+                    <div class="maroc">
+                        <div class="title">Morocco Flag</div>
+                        <img src="/images/tp-1 images/morocco.png" alt="Morocco Flag">
+                    </div>
+                    <span class="a">Est ci-dessous :</span>
+                    <div class="ex-3 bg-light p-3">
+                        <span class="grey">&lt;</span><span class="pink">div</span> <span class="class-2">class</span><span class="grey">="maroc"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="class-2">class</span><span class="grey">="title"</span><span class="grey">&gt;</span><span class="text">Morocco Flag</span><span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="grey">&lt;</span><span class="pink">img</span> <span class="class-2">src</span><span class="grey">="/images/tp-1 images/morocco.png"</span> <span class="class-2">alt</span><span class="grey">="Morocco Flag"</span><span class="grey">&gt;</span><br>
+                        <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                    </div>
+                    <br>
+                    <span class="q">2 -</span><span class="a">Le code <strong>CSS</strong> pour l'animation du drapeau :</span>
+                    <div class="ex-3 bg-light p-3 mb-3">
+                        <span class="pink">.morocco .title {</span><br>
+                            <span class="margin">color <span class="grey">:</span> black;</span><br>
+                            <span class="margin">text-align<span class="grey">:</span> center;</span><br>
+                            <span class="margin">margin-right<span class="grey">:</span> 51px;</span><br>
+                            <span class="pink">}</span><br>
+                            <span class="pink">.morocco img {</span><br>
+                                <span class="margin">display<span class="grey">:</span> block;</span><br>
+                                <span class="margin">width<span class="grey">:</span> 200px;</span><br>
+                                <span class="margin">height<span class="grey">:</span> 200px;</span><br>
+                                <span class="margin">border-radius<span class="grey">:</span> 50%;</span><br>
+                                <span class="margin">margin<span class="grey">:</span> 0 auto;</span><br>
+                                <span class="margin">animation<span class="grey">:</span> rotateMorocco 2s linear;</span><br>
+                                <span class="pink">}</span><br>
+                            <span class="pink">@keyframes rotateMorocco {</span><br>
+                                <span class="margin">0% <span class="pink">{</span></span><br>
+                                <span class="margin">transform<span class="grey">:</span> <span class="pink">rotate</span>(0);</span><br>
+                                <span class="margin"><span class="pink">}</span></span><br>
+                                <span class="margin">100% <span class="pink">{</span></span><br>
+                                <span class="margin">transform<span class="grey">:</span> <span class="pink">rotate</span>(360deg);</span><br>
+                                <span class="margin"><span class="pink">}</span></span><br>
+                                <span class="pink"><span class="pink">}</span></span><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rkNABPdh722cra28KzN+ebXkxJHeaBb7z4tvkRtW9RAnDI6z0nFgE+8Ce++9dHMR" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Tp - 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 77%;
+        }
+        .regional,
+        .title,
+        .title-2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .regional {
+            text-align: center;
+            margin: 42px;
+            font-size: 33px;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .title {
+            color: #3a67b3;
+            font-weight: bold;
+            font-size: 31px;
+            margin: 10px 0px 10px 40px;
+        }
+        .title-2 {
+            color: #3ab3ab;
+            font-weight: bold;
+            font-size: 31px;
+            margin: 10px 0px 10px 40px;
+        }
+        .q {
+            color: green;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .answer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+        }
+        .a {
+            margin-bottom: 22px;
+        }
+        strong {
+            font-style: italic;
+            color: rgb(68, 68, 68);
+        }
+        .ex {
+            border-left: 5px solid rgb(0, 215, 0);
+            border-radius: 8px;
+            font-weight: 400;
+        }
+        .ex-b {
+            border-left: 5px solid rgb(174, 0, 255);
+            border-radius: 8px;
+            font-weight: 400;
+        }
+        .result {
+            display: flex;
+            justify-content: space-between;
+        }
+        .result .row {
+            width: 500px;
+            background: rgb(174, 0, 255);
+            border-radius: 13px;
+            text-align: center;
+        }
+        .col,
+        .col-3,
+        .col-9 {
+            border-radius: 7px;
+        }
+        .languages li {
+            color: black;
+            text-align: center;
+            padding: 12px;
+            margin: 11px;
+            list-style: none;
+        }
+        .languages ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        .languages dd {
+            text-align: center;
+        }
+        .languages img {
+            width: 200px;
+        }
+        .image {
+            padding:0px 25px;
+            background: rgb(228, 228, 228);
+        }
+        .ex-2 {
+            border-left: 5px solid rgb(148, 8, 255);
+            color: purple;
+            border-radius: 8px;
+            font-style: italic;
+            font-weight: 400;
+        }
+        .ex-3 {
+            border-left: 5px solid rgb(255, 0, 0);
+            color: purple;
+            border-radius: 8px;
+            font-style: italic;
+            font-weight: 400;
+        }
+        .text-2 {
+            color: purple;
+        }
+        .pink {
+            color: rgb(255, 0, 43);
+        }
+        a {
+            text-decoration: none;
+        }
+        .grey {
+            color: rgb(101, 77, 77);
+        }
+        .green {
+            color: rgb(0, 212, 0);
+            font-weight: bold;
+        }
+        .css-code {
+            margin: 10px 0px 0px 33px;
+        }
+        .text {
+            color: black;
+        }
+       
+        .margin {
+            margin-left: 22px;
+        }
+        legend {
+            margin-left: 41px;
+        }
+        fieldset {
+            display: block;
+            margin: 0 auto;
+        }
+        fieldset table td {
+            padding: 8px;
+        }
+        @keyframes rotateMorocco {
+            0%   {
+                transform:rotate(0)
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 400px;
+            }
+            .regional {
+                font-size: 22px;
+            }
+            .nav-bar ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="regional">Examin Regional De Fin De Module<br>Site Web Statique</div>
+            <div class="title">Exercice 1:</div>
+            <div class="answer">
+                <span class="q">Q1 -</span><span class="a"><div class="ex text-success bg-light p-3">' <strong>c</strong> ' La mise en page répond dynamiquement à taille et à l'orientation des différents écrans.</div></span>
+                <span class="q">Q2 -</span><span class="a"><div class="ex text-success bg-light p-3">' <strong>b</strong> ' Utiliser un framework frontend qui a été créé testé pour prendre en compte ces variations.</div></span>
+                <span class="q">Q3 -</span><span class="a"><div class="ex text-success bg-light p-3">' <strong>c</strong> ' Un conteneur qui occupe 100% de la largeur de la zone de visualisation.</div></span>
+                <span class="q">Q4 -</span><span class="a"><div class="ex text-success bg-light p-3">' <strong>c</strong> ' <em>Conteneur > ligne > colonne</em>.</div></span>
+                <span class="q">Q5 -</span><span class="a"><div class="ex text-danger bg-light p-3"><em><div class="text-success">' <strong>b</strong> ' 6  <span class="text-danger">{</span><br></div><span class="margin"></span>(extra small, small, medium, large, x-large, xx-large)<br> }</em>.</div></span>
+                
+                <!-- BootStrap -->
+                <!-- Question 6 -->
+                <span class="q">Q6 -</span>
+                <div class="ex-b text-danger bg-light p-3 mb-3">
+                    <span class="a">
+                        <!-- code preview -->
+                        <div class="code">
+                            <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                        </div>
+                    </span>
+                </div>
+                <span class="a"><div class="ex text-success bg-light p-3">' <strong>b</strong> ' <em>3</em></div></span>
+                <div class="ex-b text-danger bg-light p-3 mb-3">
+                    <!-- result -->
+                    <div class="result">
+                        <div class="execution">
+                            <span class="a"><strong>Execution de code</strong> <em>:</em></span>
+                        </div>
+                        <div class="row text-white p-1">
+                            <div class="col border p-3">col</div>
+                            <div class="col border p-3">col</div>
+                            <div class="col border p-3">col</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 7 -->
+                <span class="q">Q7 -</span>
+                <div class="ex-b text-danger bg-light p-3 mb-3">
+                    <span class="a">
+                        <!-- code preview -->
+                        <span class="a">' <strong>1</strong> '</span><br>
+                        <div class="code" style="margin-left: 33px;">
+                            <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-3"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-9"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                        </div>
+                        <span class="a">' <strong>2</strong> '</span><br>
+                        <div class="code" style="margin-left: 33px;">
+                            <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-1"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-3"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                        </div>
+                        <span class="a">' <strong>3</strong> '</span><br>
+                        <div class="code" style="margin-left: 33px;">
+                            <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-1"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-3"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                        </div>
+                        <span class="a">' <strong>4</strong> '</span><br>
+                        <div class="code" style="margin-left: 33px;">
+                            <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-4"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-8"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                        </div>
+                    </span>
+                </div>
+                <span class="a"><div class="ex text-success bg-light p-3"><strong>reponse :</strong> <em>' 2 '</em></div></span>
+                <div class="ex-b text-danger bg-light p-3 mb-3">
+                    <!-- result -->
+                    <div class="result">
+                        <div class="execution">
+                            <span class="a"><strong>Execution de code</strong> <em>:</em></span>
+                        </div>
+                        <div class="row text-white p-1">
+                            <div class="col-3 border p-3">col-3</div>
+                            <div class="col-9 border p-3">col-9</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Question 8 -->
+                <span class="q">Q8 -</span>
+                <div class="ex-b text-danger bg-light p-3 mb-3">
+                    <span class="a">
+                        <!-- code preview -->
+                        <div class="code">
+                            <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-6 col-md-4"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-6 col-md-8"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                            <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                        </div>
+                    </span>
+                </div>
+                <div class="ex text-success bg-light p-3 mb-3">
+                    <!-- 1 -->
+                    <span class="a"><strong>pour :</strong><em><span class="margin"></span>'<span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-6 col-md-4"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span>'</span><br></em></span>
+                    <span class="a"><strong>La reponse est :</strong><span class="margin" style="margin-left: 10px;"></span> ' <em>a. Très petite</em> '</span><br><br>
+                    <!-- 2 -->
+                    <span class="a"><strong>pour :</strong><em><span class="margin"></span>'<span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-6 col-md-8"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span>'</span><br></em></span>
+                    <span class="a"><strong>La reponse est :</strong><span class="margin" style="margin-left: 10px;"></span> ' <em>c. Moyenne</em> '</span>
+                </div>
+                <div class="ex-b text-danger bg-light p-3 mb-3">
+                    <!-- result -->
+                    <div class="result">
+                        <div class="execution">
+                            <span class="a"><strong>Execution de code</strong> <em>:</em></span>
+                        </div>
+                        <div class="row text-white p-1">
+                            <div class="col-6 col-md-4 border p-3">col-6 col-md-4</div>
+                            <div class="col-6 col-md-8 border p-3">col col-md-8</div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Question 7 -->
+                 <span class="q">Q9 -</span>
+                 <div class="ex-b text-danger bg-light p-3 mb-3">
+                     <span class="a">
+                         <!-- code preview -->
+                         <span class="a">' <strong>1</strong> '</span><br>
+                         <div class="code" style="margin-left: 33px;">
+                             <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                             <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-sm-6 col-md-4 col-lg-3"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                             <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                         </div>
+                         <span class="a">' <strong>2</strong> '</span><br>
+                         <div class="code" style="margin-left: 33px;">
+                             <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                             <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-6 col-md-4 col-lg-3"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                             <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                         </div>
+                         <span class="a">' <strong>3</strong> '</span><br>
+                         <div class="code" style="margin-left: 33px;">
+                             <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                             <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-2 col-md-3 col-lg-4"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                             <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                         </div>
+                         <span class="a">' <strong>4</strong> '</span><br>
+                         <div class="code" style="margin-left: 33px;">
+                             <span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"row"</span><span class="grey">&gt;</span></span><br>
+                             <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey"> =</span><span class="text-2">"col-6 col-md-3 col-lg-4"</span><span class="grey">&gt;</span></span>...<span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span><br>
+                             <span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span></span>
+                         </div>
+                     </span>
+                 </div>
+                 <span class="a"><div class="ex text-success bg-light p-3"><strong>reponse :</strong> <em>' 1 '</em></div></span>
+                 <div class="ex-b text-danger bg-light p-3 mb-3">
+                     <!-- result -->
+                     <div class="result">
+                         <div class="execution">
+                             <span class="a"><strong>Execution de code</strong> <em>:</em></span>
+                         </div>
+                         <div class="row text-white p-2">
+                             <div class="col-sm-6 col-md-4 col-lg-3 border">col-sm-6 col-md-4 col-lg-3</div>
+                         </div>
+                     </div>
+                 </div>
+                <!-- End BootStrap -->
+            </div>
+            <div class="answer">
+                <div class="title">Exercice 2:</div>
+                    <span class="q">Reponse :</span><span class="a">Le code <strong>HTML</strong> pour la creation de cette page :</span>
+                    <div class="ex text-success bg-light p-3 mb-3">
+                        <fieldset>
+                            <legend>Formulaire de demande de passport</legend>
+                            <table>
+                                <tr>
+                                    <td><label>N CIN :</label></td>
+                                    <td><input type="number" placeholder="saisir votre N CIN"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Nom :</label></td>
+                                    <td><input type="text" placeholder="saisir votre nom"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Prenom :</label></td>
+                                    <td><input type="text" placeholder="saisir votre prenom"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Date de naissance :</label></td>
+                                    <td><input type="date"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Genre :</label></td>
+                                    <td>
+                                        <label for="Genre">Masculin</label><input type="radio" name="Genre">
+                                        <label for="Genre">Feminin</label><input type="radio" name="Genre">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Lieu de Naissance :</label></td>
+                                    <td><input type="text" placeholder="saisir votre lieu de naissance"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Pays de Naissance :</label>
+                                    </td>
+                                    <td>
+                                        <select name="birthCountry">
+                                            <option value="" disabled selected>Choisissez</option>
+                                            <option value="Morocco">Maroc</option>
+                                            <option value="France">France</option>
+                                            <option value="Italy">Italie</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="">Numero de Telephone :</label>
+                                    </td>
+                                    <td><input type="tel" placeholder="+212 600-000000" pattern="\+212 [0-9]{3}-[0-9]{6}">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="">Photo de Carte d'identitee</label></td>
+                                    <td><input type="file"></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="border p-2">Valider</button>
+                                        <button class="border p-2">Annuler</button></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </div>
+                    <span class="a">Est ci-dessous :</span>
+                    <div class="ex-3 bg-light p-3">
+                        <span class="grey">&lt;</span><span class="pink">fieldset</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">legend</span><span class="grey">&gt;</span><span class="text">Formulaire de demande de passpor</span><span class="grey">&lt;</span></span><span class="pink">/legend</span><span class="grey">&gt;</span></span></span><br>
+                        <span class="grey">&lt;</span></span><span class="pink">table</span><span class="grey">&gt;</span></span><br>
+
+                        <span class="grey">&lt;</span></span><span class="pink">tr</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">label</span><span class="grey">&gt;</span><span class="text">N CIN :</span><span class="grey">&lt;</span></span><span class="pink">/label</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">input</span> <span class="text-2">type</span><span class="grey">="number"</span> <span class="text-2">placeholder</span><span class="grey">="saisir votre N CIN"</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span></span><br>
+                        <span class="grey">&lt;</span></span><span class="pink">/tr</span><span class="grey">&gt;</span></span><br>
+
+                        <span class="grey">&lt;</span></span><span class="pink">tr</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">label</span><span class="grey">&gt;</span></span><span class="text">Nom :</span><span class="grey">&lt;</span></span><span class="pink">/label</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">input</span> <span class="text-2">type</span><span class="grey">="text"</span> <span class="text-2">placeholder</span><span class="grey">="saisir votre nom"</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span></span><br>
+                        <span class="grey">&lt;</span></span><span class="pink">/tr</span><span class="grey">&gt;</span></span><br>
+
+                        <span class="grey">&lt;</span></span><span class="pink">tr</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">label</span><span class="grey">&gt;</span><span class="text">Prenom :</span><span class="grey">&lt;</span></span><span class="pink">/label</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">input</span> <span class="text-2">type</span><span class="grey">="text"</span> <span class="text-2">placeholder</span><span class="grey">="saisir votre prénom"</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span></span><br>
+                        <span class="grey">&lt;</span></span><span class="pink">/tr</span><span class="grey">&gt;</span></span><br>
+
+                        <span class="grey">&lt;</span></span><span class="pink">tr</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">label</span><span class="grey">&gt;</span></span><span class="text">Date de Naissence :</span><span class="grey">&lt;</span></span><span class="pink">/label</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">input</span> <span class="text-2">type</span><span class="grey">="date"</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span></span><br>
+                        <span class="grey">&lt;</span></span><span class="pink">/tr</span><span class="grey">&gt;</span></span><br>
+
+
+                        <span class="grey">&lt;</span></span><span class="pink">tr</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">label</span><span class="grey">&gt;</span><span class="text">Genre :</span><span class="grey">&lt;</span></span><span class="pink">/label</span><span class="grey">&gt;</span></span><span class="grey">&lt;</span></span><span class="pink">/td</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">td</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="grey">&lt;</span></span><span class="pink">label</span> <span class="text-2">for</span><span class="grey">="genre"</span><span class="grey">&gt;</span></span><span class="text">Masculin</span><span class="grey">&lt;</span><span class="pink">/label<span class="grey">&gt;</span></span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span></span><span class="pink">input</span> <span class="text-2">type</span><span class="grey">="radio"</span> <span class="text-2">name</span><span class="grey">="genre"</span><span class="grey">&gt;</span></span></span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="grey">&lt;</span></span><span class="pink">label</span> <span class="text-2">for</span><span class="grey">="genre"</span><span class="grey">&gt;</span></span><span class="text">Feminin</span><span class="grey">&lt;</span><span class="pink">/label<span class="grey">&gt;</span></span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span></span><span class="pink">input</span> <span class="text-2">type</span><span class="grey">="radio"</span> <span class="text-2">name</span><span class="grey">="genre"</span><span class="grey">&gt;</span></span></span>
+                        <br><span class="margin"></span><span class="pink"><span class="grey">&lt;</span>/td</span><span class="grey">&gt;</span><br>
+                        <span class="grey">&lt;</span></span><span class="pink">/tr</span><span class="grey">&gt;</span></span><br>
+
+                        <span class="grey">&lt;</span><span class="pink">tr</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">td</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">label</span><span class="grey">&gt;</span><span class="text">Pays de Naissance :</span><span class="grey">&lt;</span><span class="pink">label</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">td</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="grey">&lt;</span><span class="pink">select</span> <span class="text-2">name</span><span class="grey">="birthCountry"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="margin"><span class="grey">&lt;</span><span class="pink">option</span> <span class="text-2">value</span><span class="grey">=""</span> <span class="text-2">disabled</span> <span class="text-2">selected</span><span class="grey">&gt;</span><span class="text">Choisissez</span><span class="grey">&lt;</span><span class="pink">/option</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="margin"><span class="grey">&lt;</span><span class="pink">option</span> <span class="text-2">value</span><span class="grey">="Morocco"</span><span class="grey">&gt;</span><span class="text">Maroc</span><span class="grey">&lt;</span><span class="pink">/option</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="margin"><span class="grey">&lt;</span><span class="pink">option</span> <span class="text-2">value</span><span class="grey">="France"</span><span class="grey">&gt;</span><span class="text">France</span><span class="grey">&lt;</span><span class="pink">/option</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="margin"><span class="grey">&lt;</span><span class="pink">option</span> <span class="text-2">value</span><span class="grey">="Italy"</span><span class="grey">&gt;</span><span class="text">Italie</span><span class="grey">&lt;</span><span class="pink">/option</span><span class="grey">&gt;</span></span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="grey">&lt;</span><span class="pink">/select</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="pink"><span class="grey">&lt;</span>/td</span><span class="grey">&gt;</span><br>
+                        <span class="grey">&lt;</span><span class="pink">/tr</span><span class="grey">&gt;</span><br>
+
+                        <span class="grey">&lt;</span><span class="pink">tr</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">td</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">label</span><span class="grey">&gt;</span><span class="text">Numero de Telephone :</span><span class="grey">&lt;</span><span class="pink">label</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">td</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="grey">&lt;</span><span class="pink">input</span> <span class="text-2">type</span><span class="grey">="tel"</span> <span class="text-2">placeholder</span><span class="grey">="+212 600-000000" <span class="text-2">pattern</span><span class="grey">="\+212 [0-9]{3}-[0-9]{6}"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="pink"><span class="grey">&lt;</span>/td</span><span class="grey">&gt;</span><br>
+                        <span class="grey">&lt;</span><span class="pink">/tr</span><span class="grey">&gt;</span><br>
+
+
+                        <span class="grey">&lt;</span><span class="pink">tr</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">td</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">label</span><span class="grey">&gt;</span><span class="text">Photo de Carte d'identitee</span><span class="grey">&lt;</span><span class="pink">label</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">td</span><span class="grey">&gt;</span>
+                        <span class="grey">&lt;</span><span class="pink">input</span><span class="text-2"> type</span><span class="grey">="file"</span><span class="grey">&gt;</span>
+                        <span class="pink"><span class="grey">&lt;</span>/td</span><span class="grey">&gt;</span><br>
+                        <span class="grey">&lt;</span><span class="pink">/tr</span><span class="grey">&gt;</span><br>
+                        
+                        <span class="grey">&lt;</span><span class="pink">tr</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">td</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="grey">&lt;</span><span class="pink">button</span><span class="grey">&gt;</span><span class="text">Valider</span><span class="grey">&lt;</span><span class="pink">button</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span></span><span class="grey">&lt;</span><span class="pink">button</span><span class="grey">&gt;</span><span class="text">Annuler</span><span class="grey">&lt;</span><span class="pink">button</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span><span class="pink">/td</span><span class="grey">&gt;</span><br>
+                        <span class="grey">&lt;</span><span class="pink">/tr</span><span class="grey">&gt;</span><br>
+                        
+                        <span class="grey">&lt;</span></span><span class="pink">/table</span><span class="grey">&gt;</span></span><br>
+                        <span class="grey">&lt;</span></span><span class="pink">/fieldset</span><span class="grey">&gt;</span></span><br>
+                    </div>
+            </div>
+            <div class="answer">
+                <div class="title-2">Exercice 3:</div>
+                <span class="q">Reponse :</span><span class="a">Le code <strong>HTML</strong> pour la creation de cette page :</span>
+                <div class="ex text-success bg-light p-3 mb-3">
+                    <div class="languages">
+                        <ul>
+                            <div class="image">
+                                <img src="/images/tp-2 images/html-logo.png" alt="Html logo">
+                                <li>HTML</li>
+                            </div>
+                            <div class="image">
+                                <img src="/images/tp-2 images/css-logo.png" alt="Css logo">
+                                <li>CSS</li>
+                            </div>
+                            <div class="image">
+                                <img src="/images/tp-2 images/js-logo.png" alt="JavaScript logo">
+                                <li>JAVASCRIPT</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <span class="a">Est ci-dessous :</span>
+                <div class="ex-3 bg-light p-3 mb-3">
+                    <!-- CSS -->
+                    <span class="a"> ' <strong>CSS</strong> ' :</span><br>
+                    <div class="code" style="margin-left: 33px;">
+                        <span class="grey">&lt;</span><span class="pink">style</span><span class="grey">&gt;</span><br>
+
+                        <span class="pink">.languages li {</span><br>
+                            <span class="margin">color <span class="grey">:</span> black;</span><br>
+                            <span class="margin">text-align<span class="grey">:</span>  center;</span><br>
+                            <span class="margin">padding<span class="grey">:</span> 12px;</span><br>
+                            <span class="margin">margin<span class="grey">:</span> 11px;</span><br>
+                            <span class="margin">list-style<span class="grey">:</span> none;</span><br>
+                            <span class="pink">}</span><br>
+                            
+                            <span class="pink">.languages ul {</span><br>
+                            <span class="margin">display<span class="grey">:</span> flex;</span><br>
+                            <span class="margin">justify-content<span class="grey">:</span> space-between;</span><br>
+                            <span class="pink">}</span><br>
+                            
+                            <span class="pink">.languages dd {</span><br>
+                            <span class="margin">text-align<span class="grey">:</span> center;</span><br>
+                            <span class="pink">}</span><br>
+                            
+                            <span class="pink">.languages img {</span><br>
+                            <span class="margin">width<span class="grey">:</span> 200px;</span><br>
+                            <span class="pink">}</span><br>
+                            
+                            <span class="pink">.image {</span><br>
+                            <span class="margin">padding<span class="grey">:</span> 0px 25px;</span><br>
+                            <span class="margin">background<span class="grey">:</span> rgb(228, 228, 228);</span><br>
+                            <span class="pink">}</span><br>                            
+                    
+                        <span class="grey">&lt;</span><span class="pink">/style</span><span class="grey">&gt;</span><br>
+                    </div>
+                    <!-- HTML -->
+                    <span class="a mt-3"> ' <strong>HTML</strong> ' :</span><br>
+                    <div class="code" style="margin-left: 33px;">
+                        <span class="grey">&lt;</span><span class="pink">body</span><span class="grey">&gt;</span><br>
+
+                        <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey">="languages"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"><span class="grey">&lt;</span></span><span class="pink">ul</span><span class="grey">&gt;</span><br>
+                        
+                        <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey">="images"</span><span class="grey">&gt;</span><br>
+                        <span class="magin"></span><span class="margin"></span><span class="margin"></span><span class="margin"><span class="grey">&lt;</span></span><span class="pink">img</span> <span class="text-2">src</span><span class="grey">="/images/tp-2 images/html-logo.png"</span> <span class="text-2">alt</span><span class="grey">="Html logo"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="margin"><span class="grey">&lt;</span></span><span class="pink">li</span><span class="grey">&gt;</span>HTML<span class="grey">&lt;</span><span class="pink">/li</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                        
+                        <span class="margin"></span> <span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey">="images"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="margin"><span class="grey">&lt;</span></span><span class="pink">img</span> <span class="text-2">src</span><span class="grey">="/images/tp-2 images/css-logo.png"</span> <span class="text-2">alt</span><span class="grey">="Css logo"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="margin"><span class="grey">&lt;</span></span><span class="pink">li</span><span class="grey">&gt;</span>CSS<span class="grey">&lt;</span><span class="pink">/li</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                        
+                        <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">div</span> <span class="text-2">class</span><span class="grey">="images"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="margin"><span class="grey">&lt;</span></span><span class="pink">img</span> <span class="text-2">src</span><span class="grey">="/images/tp-2 images/js-logo.png"</span> <span class="text-2">alt</span><span class="grey">="JavaScript logo"</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="margin"><span class="grey">&lt;</span></span><span class="pink">li</span><span class="grey">&gt;</span>JAVASCRIPT<span class="grey">&lt;</span><span class="pink">/li</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="margin"></span><span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                    
+                        <span class="margin"></span><span class="grey">&lt;</span><span class="pink">/ul</span><span class="grey">&gt;</span><br>
+                        <span class="margin"></span><span class="grey">&lt;</span><span class="pink">/div</span><span class="grey">&gt;</span><br>
+                    
+                        <span class="grey">&lt;</span><span class="pink">/body</span><span class="grey">&gt;</span><br>
+                    </div>
+                </div>
+            </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rkNABPdh722cra28KzN+ebXkxJHeaBb7z4tvkRtW9RAnDI6z0nFgE+8Ce++9dHMR" crossorigin="anonymous"></script>
+</body>
+</html>
